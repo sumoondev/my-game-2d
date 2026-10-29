@@ -18,12 +18,11 @@ Rules are simple:
 ## Download and Installation
 
 ### Windows
-
-1. Download `my-game-2d.exe`
-2. Double-click `my-game-2d.exe` and play
+1. Download and extract `my-game--2d-windows.zip`.
+2. Ensure `my-game-2d.exe` and `my-game-2d.pck` stay in the same folder.
+3. Double-click `my-game-2d.exe` to play.
 
 ### Linux
-
 1. Download and extract `my-game-2d-linux.zip`
 2. Make sure both `my-game-2d.x86_64` and `my-game-2d.pck` are extracted into the same folder.
 3. Give the file permission to run. You can do this quickly via your terminal:

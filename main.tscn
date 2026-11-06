@@ -23,9 +23,9 @@ tags = {
 }
 loop = true
 
-[sub_resource type="Curve2D" id="Curve2D_ig7tw"]
+[sub_resource type="Curve2D" id="Curve2D_lquwl"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 480, 720, 0, 0, 0, 0, 0, 720, 0, 0, 0, 0, 0, 0)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1278, 4, 0, 0, 0, 0, 1282, 718, 0, 0, 0, 0, -3, 719, 0, 0, 0, 0, 0, 1)
 }
 point_count = 5
 
@@ -50,7 +50,7 @@ stream = ExtResource("3_lquwl")
 [node name="Player" parent="." unique_id=1933924729 instance=ExtResource("1_ig7tw")]
 
 [node name="MobTimer" type="Timer" parent="." unique_id=1617385376]
-wait_time = 0.5
+wait_time = 0.8
 
 [node name="ScoreTimer" type="Timer" parent="." unique_id=786269667]
 
@@ -59,12 +59,14 @@ wait_time = 2.0
 one_shot = true
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=1455977371]
-position = Vector2(240, 450)
+position = Vector2(640, 460)
 
-[node name="MobPath" type="Path2D" parent="." unique_id=1160791908]
-curve = SubResource("Curve2D_ig7tw")
+[node name="MobPath" type="Path2D" parent="." unique_id=332392253]
+curve = SubResource("Curve2D_lquwl")
 
-[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath" unique_id=1393333827]
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath" unique_id=1340167945]
+position = Vector2(0, 1)
+rotation = 0.0023474135
 
 [node name="HUD" parent="." unique_id=1813808625 instance=ExtResource("4_1bvp3")]
 
